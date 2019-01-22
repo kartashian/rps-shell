@@ -36,7 +36,7 @@ public class ApplicationManagerImpl implements ApplicationManager {
                 String inputText = input.nextLine();
                 context.currentLayout().execute(inputText);
             } catch (Exception e) {
-               print("Internal error: " + e.getStackTrace());
+               print("Internal error: " + e.toString());
             }
         }
     }
